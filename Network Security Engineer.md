@@ -20,6 +20,7 @@
 Fortinet, Sophos, Check Point firewalls, IDS/IPS, WAF, Cisco IOS, VPN (site-to-site & remote access)
 
 ## Sample Artifacts
-> _Add sanitized examples here if you can share them without violating BSC confidentiality — e.g. a generic firewall rule template, a VPN config skeleton, or an incident report template with placeholder data._
-- [`sample-firewall-ruleset.txt`](./sample-firewall-ruleset.txt) — _(placeholder — add your own sanitized example)_
-- [`vpn-config-template.conf`](./vpn-config-template.conf) — _(placeholder — add your own sanitized example)_
+*Generic templates reflecting the configuration structure and hardening approach I use — built on FortiGate syntax, with all addresses replaced by RFC 5737 documentation ranges and no client-identifying information.*
+- [`sample-firewall-ruleset.conf`](./sample-firewall-ruleset.conf) — FortiGate policy set: segmentation, UTM profiles, explicit default-deny
+- [`vpn-config-template.conf`](./vpn-config-template.conf) — FortiGate site-to-site IPsec VPN: IKEv2, AES-256/SHA-256, PFS, DPD
+- [`incident-report-template.md`](./incident-report-template.md) — incident documentation format used for stakeholder reporting
