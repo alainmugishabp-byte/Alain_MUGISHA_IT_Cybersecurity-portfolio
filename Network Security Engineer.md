@@ -1,7 +1,7 @@
 # Network Security Engineer
 
 **Employer:** Broadband Systems Corporation (BSC) — Kigali, Rwanda
-**Duration:** August 2025 – May 2026
+**Duration:** August 2024 – May 2026
 
 ## Responsibilities
 - Designed and implemented enterprise security infrastructure including firewalls, VPNs, IDS/IPS, and WAF systems
