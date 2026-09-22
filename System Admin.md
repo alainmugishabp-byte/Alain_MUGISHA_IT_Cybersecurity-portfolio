@@ -21,9 +21,9 @@
 - Supported IT operations, system maintenance, and user support
 
 ## Tools Used
-Windows Server, Windows OS, Active Directory (user management), ITSM ticketing systems, patch management tools
+Windows Server, Windows OS, Active Directory (user management), splynx ticketing systems, patch management tools
 
 ## Sample Artifacts
-> _Add real examples if available — e.g. a support ticket resolution log (anonymized), a documented troubleshooting procedure, or a user onboarding checklist you created._
-- [`user-onboarding-script.ps1`](./user-onboarding-script.ps1) — _(placeholder — add your own sanitized example)_
-- [`support-procedure-template.md`](./support-procedure-template.md) — _(placeholder — add your own sanitized example)_
+*Templates reflecting the account provisioning and troubleshooting documentation approach I use in SLA-driven support environments — no real domains, usernames, or client data.*
+- [`user-onboarding-script.ps1`](./user-onboarding-script.ps1) — PowerShell AD user creation: account setup, group membership, home directory, logging
+- [`support-procedure-template.md`](./support-procedure-template.md) — VPN connectivity troubleshooting procedure with escalation path
