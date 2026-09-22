@@ -29,5 +29,5 @@
 Enterprise network monitoring platforms, ITSM ticketing systems, Cisco IOS, VPN, SLA/change management processes
 
 ## Sample Artifacts
-> _Add real examples if available — e.g. an incident postmortem template, an SDLAN architecture diagram (sanitized), or a project coordination checklist._
-- [`incident-postmortem-template.md`](./incident-postmortem-template.md) — _(placeholder — add your own sanitized example)_
+*A blameless postmortem structure I use for major incident review in NOC/infrastructure environments — no real hostnames, IPs, or client data.*
+- [`incident-postmortem-template.md`](./incident-postmortem-template.md) — timeline, root cause, corrective actions, and SLA impact tracking
