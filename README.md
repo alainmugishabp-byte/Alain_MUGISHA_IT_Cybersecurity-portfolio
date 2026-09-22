@@ -4,7 +4,7 @@ Kigali, Rwanda | ✉️ Mugisha.alainbp@gmail.com | +250 788 997 540 / +250 785 
 🔗 [LinkedIn](https://www.linkedin.com/in/alain-mugisha-362798129/)
 
 ## About Me
-Network, Security, IT Support, and Technical Training Specialist with 7+ years of experience across enterprise network operations, cybersecurity, SOC/NOC environments, IT service delivery, and technical leadership. Skilled in designing, securing, and maintaining high-availability network infrastructures across enterprise and government environments, with a strong track record leading technical teams, managing incidents within SLA-driven frameworks, and delivering instructor-led networking/cybersecurity training.
+Network, Security, IT Support, and Technical Training Specialist with 6+ years of experience across enterprise network operations, cybersecurity, SOC/NOC environments, IT service delivery, and technical leadership. Skilled in designing, securing, and maintaining high-availability network infrastructures across enterprise and government environments, with a strong track record leading technical teams, managing incidents within SLA-driven frameworks, and delivering instructor-led networking/cybersecurity training.
 
 ## Education
 - **MSc in Information Technology** (Ongoing) — University of Kigali, 2025–Present
