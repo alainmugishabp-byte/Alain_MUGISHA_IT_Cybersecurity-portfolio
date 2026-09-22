@@ -29,5 +29,5 @@
 IDS/IPS, WAF, SOC monitoring platforms, vulnerability assessment tools
 
 ## Sample Artifacts
-> _Add real examples if available — e.g. a sanitized alert triage checklist, an incident investigation report template, or a phishing analysis writeup with identifying details removed._
-- [`incident-response-playbook.md`](./incident-response-playbook.md) — _(placeholder — add your own sanitized example)_
+*A generic playbook reflecting the triage and escalation structure I use for common SOC alert categories — no real hostnames, IPs, or client data.*
+- [`incident-response-playbook.md`](./incident-response-playbook.md) — suspicious login / brute-force triage: detect → triage → contain → eradicate → recover → report
