@@ -1,4 +1,4 @@
-# MUGISHA Alain — IT & Security Portfolio
+# MUGISHA Alain — IT & CyberSecurity Portfolio
 
 Kigali, Rwanda | ✉️ Mugisha.alainbp@gmail.com | +250 788 997 540 / +250 785 728 558
 🔗 [LinkedIn](https://www.linkedin.com/in/alain-mugisha-362798129/)
