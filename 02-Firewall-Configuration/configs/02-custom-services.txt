@@ -1,0 +1,8 @@
+config firewall service custom
+  edit "TCP-8443"
+    set tcp-portrange 8443
+  next
+  edit "MYSQL-3306"
+    set tcp-portrange 3306
+  next
+end
