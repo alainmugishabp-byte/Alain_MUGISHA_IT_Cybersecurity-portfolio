@@ -1,0 +1,8 @@
+diagnose vpn ike gateway list
+diagnose vpn tunnel list
+get vpn ipsec tunnel summary
+diagnose debug application ike -1      # enable IKE debug (turn off after: diagnose debug reset)
+diagnose debug enable
+execute ping-options source 10.10.10.1
+execute ping 10.20.10.1
+execute traceroute 10.20.10.1
