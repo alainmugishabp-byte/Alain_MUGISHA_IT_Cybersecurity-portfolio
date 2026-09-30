@@ -26,6 +26,9 @@ Demonstrate practical monitoring of network infrastructure, security events, ava
 * SIEM concepts
 * SNMP
 * Syslog
+* LibreNMS
+* Cacti
+* Nagios
 
 ## Evidence
 
