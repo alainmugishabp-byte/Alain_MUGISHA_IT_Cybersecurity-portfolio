@@ -1,0 +1,9 @@
+Site,Zone,VLAN,Subnet,Gateway,Purpose
+HQ,Users,10,10.10.10.0/24,10.10.10.1,Staff workstations
+HQ,Servers,20,10.10.20.0/24,10.10.20.1,Internal servers
+HQ,Management,30,10.10.30.0/24,10.10.30.1,Admin PCs and FortiAnalyzer
+HQ,Guest,40,10.10.40.0/24,10.10.40.1,Visitors (Internet only)
+HQ,DMZ,50,10.10.50.0/24,10.10.50.1,Public web server
+Branch,Users,n/a,10.20.10.0/24,10.20.10.1,Branch staff
+WAN,HQ uplink,n/a,203.0.113.0/30,203.0.113.1,Documentation range
+WAN,Branch uplink,n/a,198.51.100.0/30,198.51.100.1,Documentation range
