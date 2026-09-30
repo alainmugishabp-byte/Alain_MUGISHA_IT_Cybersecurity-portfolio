@@ -1,0 +1,58 @@
+config firewall policy
+  edit 1
+    set name "Users-to-Internet"
+    set srcintf "vlan10"
+    set dstintf "wan1"
+    set srcaddr "NET_USERS"
+    set dstaddr "all"
+    set action accept
+    set schedule "always"
+    set service "HTTP" "HTTPS" "DNS"
+    set nat enable
+    set logtraffic all
+  next
+  edit 2
+    set name "Users-to-WebServer"
+    set srcintf "vlan10"
+    set dstintf "vlan50"
+    set srcaddr "NET_USERS"
+    set dstaddr "SRV_WEB"
+    set action accept
+    set schedule "always"
+    set service "HTTPS"
+    set logtraffic all
+  next
+  edit 3
+    set name "Web-to-DB"
+    set srcintf "vlan50"
+    set dstintf "vlan20"
+    set srcaddr "SRV_WEB"
+    set dstaddr "SRV_DB"
+    set action accept
+    set schedule "always"
+    set service "MYSQL-3306"
+    set logtraffic all
+  next
+  edit 4
+    set name "Internet-to-DMZ-Web"
+    set srcintf "wan1"
+    set dstintf "vlan50"
+    set srcaddr "all"
+    set dstaddr "VIP_WEB_443"
+    set action accept
+    set schedule "always"
+    set service "HTTPS"
+    set logtraffic all
+  next
+  edit 999
+    set name "Deny-All-Log"
+    set srcintf "any"
+    set dstintf "any"
+    set srcaddr "all"
+    set dstaddr "all"
+    set action deny
+    set schedule "always"
+    set service "ALL"
+    set logtraffic all
+  next
+end
