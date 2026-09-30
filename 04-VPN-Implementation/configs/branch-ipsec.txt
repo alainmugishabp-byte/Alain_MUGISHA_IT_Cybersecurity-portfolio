@@ -1,0 +1,61 @@
+# Branch FortiGate IPsec configuration (reference). Replace <PSK>; never commit the real key.
+config vpn ipsec phase1-interface
+  edit "BR-to-HQ"
+    set interface "wan1"
+    set ike-version 2
+    set remote-gw 203.0.113.1
+    set proposal aes256-sha256
+    set dhgrp 14
+    set psksecret <PSK>
+    set dpd on-idle
+    set dpd-retrycount 3
+    set dpd-retryinterval 10
+  next
+end
+config vpn ipsec phase2-interface
+  edit "BR-to-HQ-P2"
+    set phase1name "BR-to-HQ"
+    set proposal aes256-sha256
+    set pfs enable
+    set dhgrp 14
+    set src-subnet 10.20.10.0 255.255.255.0
+    set dst-subnet 10.10.10.0 255.255.255.0
+  next
+end
+config router static
+  edit 10
+    set dst 10.10.10.0 255.255.255.0
+    set device "BR-to-HQ"
+  next
+  edit 11
+    set dst 10.10.10.0 255.255.255.0
+    set blackhole enable
+    set distance 254
+  next
+end
+config firewall policy
+  edit 50
+    set name "LAN-to-BR-to-HQ"
+    set srcintf "lan"
+    set dstintf "BR-to-HQ"
+    set srcaddr "all"
+    set dstaddr "all"
+    set action accept
+    set schedule "always"
+    set service "ALL"
+    set logtraffic all
+  next
+  edit 51
+    set name "BR-to-HQ-to-LAN"
+    set srcintf "BR-to-HQ"
+    set dstintf "lan"
+    set srcaddr "all"
+    set dstaddr "all"
+    set action accept
+    set schedule "always"
+    set service "ALL"
+    set logtraffic all
+  next
+end
+# Tighten service "ALL" to the ports actually needed once the tunnel works.
+# Replace "lan" with your real interface (e.g. vlan10 at HQ).
