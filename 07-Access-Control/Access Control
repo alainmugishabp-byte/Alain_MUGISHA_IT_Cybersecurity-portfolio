@@ -1,0 +1,26 @@
+# Access Control
+
+## Objective
+
+Demonstrate implementation of access-control mechanisms based on authentication, authorization, and least-privilege principles.
+
+## Activities
+
+* Administrator account management
+* Role-based access control
+* Privilege assignment
+* Administrative access restriction
+* Trusted-host configuration
+* VPN access control
+* Network access policies
+* Authentication logging
+* Periodic access review
+
+## Security Principles
+
+* Least privilege
+* Need-to-know
+* Separation of duties
+* Strong authentication
+* Controlled administrative access
+* Auditability
