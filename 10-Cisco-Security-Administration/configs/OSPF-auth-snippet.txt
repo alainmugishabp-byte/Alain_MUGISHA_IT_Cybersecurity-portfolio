@@ -1,0 +1,7 @@
+router ospf 1
+ passive-interface default
+ no passive-interface g0/1
+ area 0 authentication message-digest
+interface g0/1
+ ip ospf message-digest-key 1 md5 <KEY>
+! Apply the same key on the neighbor router.
