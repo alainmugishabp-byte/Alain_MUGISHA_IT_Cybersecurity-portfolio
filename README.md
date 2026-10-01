@@ -66,6 +66,4 @@ Network, Security, IT Support, and Technical Training Specialist with 6+ years o
 Alongside my technical roles, I deliver instructor-led networking and cybersecurity training (Cisco Networking Academy, KIM University, Kivu Hills Academy), including curriculum development, hands-on lab facilitation, and student/learner mentorship — see [training-and-mentorship](./training-and-mentorship/) for details.
 
 ## References
-- **Yves Ishema** — Network Installation and Service Delivery Manager, BSC — lil.yves@gmail.com | 0788215790
-- **Dr. Musoni Wilson, PhD** — Dean of SCIT & ADVC-HR and Admin — wmusoni@uok.ac.rw | +250784186370
-- **Wilson Muhirwa** — General Director, CDL-Centre — wilsontheconsultant@gmail.com | 0783699436
+When Needed!!!
