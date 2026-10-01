@@ -1,0 +1,31 @@
+hostname R1
+service password-encryption
+enable secret <SECRET>
+username netadmin privilege 15 secret <PASSWORD>
+ip domain-name lab.local
+crypto key generate rsa modulus 2048
+ip ssh version 2
+no ip http server
+banner motd ^Authorized access only^
+!
+interface g0/0
+ no shutdown
+interface g0/0.10
+ encapsulation dot1Q 10
+ ip address 10.10.10.1 255.255.255.0
+ ip access-group USERS-TO-SERVERS in
+interface g0/0.20
+ encapsulation dot1Q 20
+ ip address 10.10.20.1 255.255.255.0
+!
+ip access-list extended USERS-TO-SERVERS
+ permit tcp 10.10.10.0 0.0.0.255 host 10.10.20.10 eq 80
+ permit tcp 10.10.10.0 0.0.0.255 host 10.10.20.10 eq 443
+ deny ip 10.10.10.0 0.0.0.255 10.10.20.0 0.0.0.255 log
+ permit ip any any
+!
+line vty 0 4
+ transport input ssh
+ login local
+ exec-timeout 5 0
+login block-for 120 attempts 3 within 60
