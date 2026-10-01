@@ -1,0 +1,12 @@
+# Screenshot Checklist: Cisco Security Lab
+
+Capture these from your own lab, save them in this folder using the file names below, and tick each box.
+Hide or blur real public IPs, serial numbers, license keys, and passwords before committing.
+
+- [ ] `01-topology.png` : Packet Tracer/GNS3 topology
+- [ ] `02-vlan-brief.png` : show vlan brief
+- [ ] `03-trunk.png` : show interfaces trunk
+- [ ] `04-acl-hits.png` : show access-lists with hit counts
+- [ ] `05-port-security-violation.png` : err-disabled port
+- [ ] `06-ssh-only.png` : Telnet refused, SSH works
+- [ ] `07-ospf-auth.png` : OSPF neighbor with authentication
